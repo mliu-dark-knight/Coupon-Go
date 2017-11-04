@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        >
+
+        <ImageView
+            android:id="@+id/restaurant_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/restaurant_icon_description"
+            android:src="@drawable/chipotle"
+            />
+
+        <TextView
+            android:id="@+id/view_goal_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:maxLines="2"
+            android:gravity="start|center_vertical"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/restaurant_icon"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_goal_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:padding="5dp"
+        />
+</LinearLayout>

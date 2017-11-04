@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/walk_background_washout"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_image_description"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/view_challenge_heading"
+            android:id="@+id/reward_challenge_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            />
+
+        <TextView
+            android:id="@+id/completed_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_below="@+id/reward_challenge_heading"
+            android:text="hi!"
+            />
+
+        <TextView
+            android:id="@+id/scan_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Congratulations! Scan to redeem"
+            android:textSize="20sp"
+            android:layout_below="@+id/completed_date"
+            />
+
+        <ImageView
+            android:id="@+id/qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qr"
+            android:layout_below="@+id/scan_message"
+            android:padding="15dp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <!--<ImageView
+            android:id="@+id/checkmark_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/checkmark"
+            android:layout_below="@+id/qr_code"
+            android:layout_alignParentBottom="true"
+            android:foregroundGravity="right"
+            />-->
+
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalkingActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:context="edu.illinois.cs465.walkingrewardapp.WalkingActivity"
+        class="edu.illinois.cs465.walkingrewardapp.Maps.MySupportMapFragment"
+        android:layout_weight="2.6"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/menu"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goal"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_alignLeft="@id/description"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/timeRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/description"
+            android:layout_below="@+id/description"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal|bold"
+        />
+
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="#1f1"
+            android:progressBackgroundTint="#c0cb18"
+            android:startColor="#c0cb18"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

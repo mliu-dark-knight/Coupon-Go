@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalkingActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/walk_background_washout"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_image_description"
+        />
+
+    <ListView
+        android:id="@+id/reward_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

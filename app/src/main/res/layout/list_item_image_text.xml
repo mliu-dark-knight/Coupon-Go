@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorTextOverBackground"
+    >
+
+    <ImageView
+        android:id="@+id/restaurant_icon"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/restaurant_icon_description"
+        />
+
+    <!-- code from https://www.learn2crack.com/2013/10/android-custom-listview-images-text-example.html -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="100dp"
+        android:gravity="start|center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rewards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

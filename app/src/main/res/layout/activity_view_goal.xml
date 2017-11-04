@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/walk_background_washout"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_image_description"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        >
+
+        <include
+            layout="@layout/view_challenge_heading"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/view_goal_steps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/view_goal_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:src="@drawable/walk"
+                android:clickable="true"
+                app:fabSize="normal"
+                app:backgroundTint="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

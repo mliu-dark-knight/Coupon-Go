@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalkingActivity">
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_below="@+id/choose_date_button"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/graph" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/statistics_table"
+        android:layout_below="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text="Traveled"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/traveled"
+                android:text=""
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Rewards Earned"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/earned"
+                android:text=""
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Rewards Used"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/used"
+                android:text=""
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Saved"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/saved"
+                android:text=""
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/choose_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/picker"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</RelativeLayout>

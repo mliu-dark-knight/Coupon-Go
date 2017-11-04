@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".WalkingActivity"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content">
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:layout_alignParentRight="true"
+        android:title="Home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_change_goal"
+        android:title="@string/change_goal"
+        android:orderInCategory="100"
+        android:layout_alignParentRight="true"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_my_rewards"
+        android:title="@string/my_rewards"
+        android:orderInCategory="200"
+        android:layout_alignParentRight="true"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_view_statistics"
+        android:title="@string/statistics"
+        android:orderInCategory="300"
+        android:layout_alignParentRight="true"
+        app:showAsAction="never"
+        />
+
+
+</menu>
